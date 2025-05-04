@@ -39,7 +39,7 @@ const HeroCard = (props: HeroCardProps) => {
         height={114}
         priority
       />
-      <p className="text-3xl font-bold absolute z-10 pl-24 text-shadow-lg/60 text-shadow-gray-800">
+      <p className="text-3xl font-bold font-['Iceberg'] absolute z-10 pl-24 text-shadow-lg/60 text-shadow-gray-800 tracking-wide">
         {props.title}
       </p>
       
