@@ -210,7 +210,7 @@ const quips = {
 
 const Grid = () => {
   return (
-    <div className="bg-zinc-900 grid grid-cols-2 gap-x-8 gap-y-6 p-4 max-w-100%"> 
+    <div className="bg-zinc-900 grid grid-cols-2 gap-x-8 gap-y-6 p-5 max-w-100%"> 
       {Object.entries(quips).map(([key, value]) => (
         <HeroCard 
           key={key}
