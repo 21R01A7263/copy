@@ -34,19 +34,19 @@ const HeroCard = (props: HeroCardProps) => {
       <Image
         src={`/assets/${props.img}.png`}
         alt={props.title}
-        className="object-cover rounded-lg"
+        className="object-cover rounded-lg transition-all ease-in hover:outline-2 hover:outline-gray-200 hover:rounded-lg hover:scale-105 hover:delay-20"
         width={640}
         height={114}
         priority
       />
-      <p className="text-3xl font-bold font-['Iceberg'] absolute z-10 pl-24 text-shadow-lg/60 text-shadow-gray-800 tracking-wide">
+      <p className="text-3xl font-bold font-['Iceberg'] absolute z-10 pl-24 pointer-events-none text-shadow-lg/60 text-shadow-gray-800 tracking-wide text-zinc-200">
         {props.title}
       </p>
       
       {isHovering && (
         <button
           onClick={handleCopy}
-          className="absolute right-3 z-20 bg-gray-800 bg-opacity-70 hover:bg-opacity-90 text-white p-2 rounded-full transition-all duration-200"
+          className="absolute pointer-events-none right-3 z-20 bg-gray-800 text-white p-2 rounded-full transition-all duration-200"
           title="Copy random quip"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
